@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fiap.ListaController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="115.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#abrirCadastroDeUsuario" prefHeight="25.0" prefWidth="126.0" text="Cadastrar Usuário" />
+            <Button mnemonicParsing="false" onAction="#carregarDados" prefHeight="25.0" prefWidth="119.0" text="Lista de Usuários" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <TableView fx:id="tabela" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colunaNome" prefWidth="196.0" text="Nome" />
+          <TableColumn fx:id="colunaEmail" prefWidth="205.0" text="E-mail" />
+            <TableColumn fx:id="colunaPerfil" prefWidth="78.0" text="Perfil" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
